@@ -3,8 +3,6 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
 import { AppRouter } from "./components/routes/AppRouter";
 import { BrowserRouter } from "react-router-dom";
-import { Form } from "./components/form/Form";
-import { About } from "./components/about/AboutUs";
 
 export const App = () => {
   return (

@@ -82,6 +82,62 @@ export const Home = () => {
             <img src="./assets/images/ksa.webp" alt="" className="p-4" />
           </div>
         </div>
+        <div className="p-4 bg-white">
+          <div className="text-center">
+            <div className="text-5xl text-blue font-playfair p-4">
+              Shop smart seller for the Best Deals
+            </div>
+            <hr className="w-14 mx-auto m-4 text-tgray "></hr>
+          </div>
+          <div className="flex align-center justify-center pl-40 pr-40 pb-12">
+            <div className="flex p-8 w-[80rem]">
+              <img src="./assets/images/deals.webp" alt="" className="p-4" />
+              <div className="w-[65%] pl-4">
+                <div className="text-3xl font-playfair p-4">Register</div>
+                <div className="text-tgray font-semibold p-4">
+                  Sign up and create your account in a few simple steps!
+                </div>
+                <div className="text-3xl font-playfair p-4">Connect</div>
+                <div className="text-tgray font-semibold p-4">
+                  Integrate your online store or sales platform with Linker
+                  sellers. Connect with all the leading markets and online
+                  stores and start selling on them all directly!
+                </div>
+                <div className="text-3xl font-playfair p-4">Manage</div>
+                <div className="text-tgray font-semibold p-4">
+                  After completing the linking processes, you can manage all
+                  your business operations on all those sales channels from one
+                  central platform.
+                </div>
+                <div className="p-4 mt-4">
+                  <a
+                    href="form"
+                    className="uppercase p-4 font-bold tracking-wider bg-btnclr hover:bg-hbtnclr"
+                  >
+                    get in touch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-gray p-6 h-20 text-center text-blue text-2xl font-semibold">
+            Real-time Inventory * Multi-Channel Integration * Orders Management
+            * Pricing Management *Automatic
+          </div>
+          <div className="insta">
+            <div className="text-center">
+              <div className="text-5xl text-blue font-playfair p-4 pt-12">
+                Instagram
+              </div>
+              <hr className="w-14 mx-auto m-4 text-tgray "></hr>
+            </div>
+            <p className="pt-8 pb-12 text-center">Feed coming soon</p>
+          </div>
+          <div className="bg-gray p-6 h-20 text-center text-blue text-2xl font-semibold">
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
+        </div>
       </div>
     </section>
   );
