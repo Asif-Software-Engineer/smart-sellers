@@ -1,0 +1,6 @@
+.review{
+    /* background-image: url("../assets/images/review.webp"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url(//img1.wsimg.com/isteam/stock/1793/:/rs=w:3070,m)
+}
