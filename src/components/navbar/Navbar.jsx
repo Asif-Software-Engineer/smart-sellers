@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Navbar = () => {
   return (
-    <nav className="navbar fixed top-0 left-0 w-full flex p-4 h-[8.2rem] bg-gradient-to-r from-black/80 to-black/80">
+    <nav className="navbar fixed top-0 left-0 w-full flex p-4 h-[8.2rem] z-50 bg-gradient-to-r from-black/80 to-black/80">
         <div className='ml-8 '>
             <img src="./assets/images/logo.webp" alt="logo" className='absolute '/>
         </div>

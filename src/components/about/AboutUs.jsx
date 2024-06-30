@@ -8,7 +8,7 @@ export const About = () => {
     <div className="m-12 mt-[11.2rem]">
       <div className="text-center">
         <div className="text-5xl text-blue font-playfair p-4">About Us</div>
-        <hr className="w-14 mx-auto m-4 text-gray "></hr>
+        <hr className="w-14 mx-auto m-4 text-tgray "></hr>
       </div>
       <div className="flex align-center justify-center ml-32 mr-32">
         <img
