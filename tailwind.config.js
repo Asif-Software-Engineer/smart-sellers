@@ -12,10 +12,21 @@ module.exports = {
         bclr: 'rgb(226, 226, 226)',
         black: 'black',
         gray: 'rgb(246, 246, 246)',
+        hfbclr: 'rgb(29, 169, 254)',
+        fbclr: 'rgb(53, 69, 253)',
       },
     },
     fontFamily: {
       'playfair': ['Playfair Display', 'serif'],
+    },
+    keyframes: {
+      marquee: {
+        '0%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+    },
+    animation: {
+      marquee: 'marquee 20s linear infinite',
     },
   },
   variants: {
