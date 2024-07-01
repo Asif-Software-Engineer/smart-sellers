@@ -10,7 +10,9 @@ export const Career = () => {
         <hr className="w-14 mx-auto m-4 text-tgray "></hr>
       </div>
       <div className="text-center font-playfair w-[45rem] p-4 m-16 bg-gradient-to-r from-gray/90 to-gray/90">
-        Files coming soon.
+        <div className="w-full lg:w-[45rem] xl:w-[50rem]">
+          Files coming soon.
+        </div>
       </div>
     </div>
   );

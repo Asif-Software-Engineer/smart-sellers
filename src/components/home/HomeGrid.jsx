@@ -3,7 +3,7 @@ import React from "react";
 export const HomeGrid = () => {
   return (
     <div className="bg-white p-12 flex align-center justify-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ml-40 mr-40 h-[30rem] w-[80rem]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:ml-10 lg:ml-25 xl:ml-40 md:mr-10 lg:mr-25 xl:mr-40 h-[30rem] w-full md:w-2/3">
         <a
           href="#"
           className="relative border text-center overflow-hidden group"
@@ -42,5 +42,6 @@ export const HomeGrid = () => {
         </a>
       </div>
     </div>
+    
   );
 };
