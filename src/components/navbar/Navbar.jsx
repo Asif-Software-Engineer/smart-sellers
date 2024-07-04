@@ -1,18 +1,47 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    setScrolled(scrollTop > 50);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="navbar fixed top-0 left-0 w-full h-[9.2rem] z-50 bg-gradient-to-r from-black/80 to-black/80">
-      <div className="flex justify-between items-center">
-        <div className="ml-12 -mt-8">
-          <img src="./assets/images/logo.webp" alt="logo" className="absolute h-full pb-10" />
-        </div>
+    <nav
+      className={`navbar fixed top-0 left-0 w-full z-50 flex align-center ${
+        scrolled
+          ? "bg-gradient-to-r from-black/80 to-black/80 flex align-center h-[8rem]"
+          : "bg-none pt-1 h-[7.3rem]"
+      } transition-all dusration-300`}
+    >
+      <div className="flex justify-between items-center w-full">
+        <a
+          className="ml-12 w-[35%] right-0 flex justify-between items-center"
+          href="home"
+        >
+          <img
+            src="./assets/images/logo.webp"
+            alt="logo"
+            className={`absolute ${
+              scrolled ? "h-26 " : "h-full pt-3 pb-1 pr-1"
+            } transition-all duration-300 cursor-pointer flex justify-start align-center`}
+          />
+        </a>
         <div className="block lg:hidden">
-          <button onClick={toggleMenu} className="text-white font-bold pt-8 pr-8">
+          <button
+            onClick={toggleMenu}
+            className="text-white font-bold hover:text-tgray pr-8"
+          >
             <svg
               className="h-6 w-6"
               fill="none"
@@ -29,21 +58,21 @@ export const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden lg:flex text-white justify-center items-center pt-16 pr-12 font-bold">
+        <div className="hidden lg:flex w-[65%] text-xs font-medium tracking-wider text-white justify-end items-center align-center pr-6">
           <a
-            className="block lg:inline-block text-white hover:text-tgray cursor-pointer mr-8 uppercase"
+            className="block lg:inline-block hover:text-tgray cursor-pointer mr-8 uppercase"
             href="home"
           >
             Home
           </a>
           <a
-            className="block lg:inline-block text-white hover:text-tgray cursor-pointer mr-8 uppercase"
+            className="block lg:inline-block hover:text-tgray cursor-pointer mr-8 uppercase"
             href="form"
           >
             Try Now
           </a>
           <a
-            className="block lg:inline-block text-white hover:text-tgray cursor-pointer mr-8 uppercase"
+            className="block lg:inline-block hover:text-tgray cursor-pointer mr-8 uppercase"
             href="about"
           >
             About Us
@@ -51,7 +80,7 @@ export const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="lg:hidden text-white text-center -mt-12 font-bold">
+        <div className="lg:hidden text-white text-center bg-black h-screen w-screen font-bold">
           <a
             className="block p-2 text-white hover:text-tgray cursor-pointer uppercase"
             href="home"

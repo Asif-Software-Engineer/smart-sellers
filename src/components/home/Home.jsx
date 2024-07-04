@@ -17,20 +17,20 @@ export const Home = () => {
   return (
     <section className="flex flex-col align-center justify-center ">
       <div
-        className="relative w-full bg-fixed bg-center bg-cover bg-no-repeat h-[95%]"
+        className="relative w-full bg-fixed bg-center bg-cover bg-no-repeat h-full"
         style={{ backgroundImage: "url(./assets/images/bg-img.webp)" }}
       >
-        <div className="text-center mb-20 pt-[8rem] bg-black bg-opacity-25 ">
-          <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-playfair px-8 md:pt-24 lg:px-48 pt-48 pb-6">
+        <div className="text-center pt-[9rem] pb-[6.4rem] bg-black bg-opacity-25 w-full px-7 ">
+          <div className="text-5xl md:text-6xl lg:text-7xl xl:text-7xl text-white font-playfair md:pt-24 lg:px-48 pt-12 pb-2">
             Marketplace management for e-commerce businesses
           </div>
-          <span className="text-xl md:text-2xl text-white font-playfair">
+          <span className="text-xl md:text-xl text-white">
             AUTOMATE. OPTIMIZE. EXPAND.
           </span>
-          <div className="mt-8 md:mt-16 ">
+          <div className="my-8 md:mt-12 font-light text-sm py-2">
             <a
               href="form"
-              className="uppercase p-2 md:p-4 font-bold tracking-wider bg-btnclr hover:bg-hbtnclr"
+              className="uppercase px-32 py-5 md:py-5 md:p-7 border-none rounded font-bold tracking-wider bg-btnclr hover:bg-hbtnclr"
             >
               Choose Your Plan
             </a>

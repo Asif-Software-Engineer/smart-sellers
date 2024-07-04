@@ -10,7 +10,7 @@ module.exports = {
         tgray: "rgb(94, 94, 94)",
         white: "white",
         bclr: "rgb(226, 226, 226)",
-        black: "black",
+        black: "rgb(22, 22, 22)",
         gray: "rgb(246, 246, 246)",
         hfbclr: "rgb(29, 169, 254)",
         fbclr: "rgb(53, 69, 253)",
@@ -20,6 +20,10 @@ module.exports = {
         'xl': '1280px',
         'lg': '1024px', 
         'md': '780px', 
+        'sm' : '640px',
+      },
+      fontSize: {
+        '66': '4.2rem', // 66px
       },
     },
     fontFamily: {
